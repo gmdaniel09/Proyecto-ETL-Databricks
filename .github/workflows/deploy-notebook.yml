@@ -17,7 +17,7 @@ jobs:
       run: |
         ORIGIN_HOST=${{ secrets.DATABRICKS_ORIGIN_HOST }}
         ORIGIN_TOKEN=${{ secrets.DATABRICKS_ORIGIN_TOKEN }}
-        NOTEBOOK_BASE="/Workspace/Users/engineer.gmdaniel_outlook.com#ext#@engineergmdanieloutlook.onmicrosoft.com/Proyecto-ETL-Databricks/proceso/"
+        NOTEBOOK_BASE="/Workspace/Users/engineer.gmdaniel_outlook.com#ext#@engineergmdanieloutlook.onmicrosoft.com/Proyecto-ETL-Databricks/proceso"
         NOTEBOOKS=("1. Preparacion_Ambiente" "2. DDLs Tablas" "3. Ingesta bronze" "4. Transformacion" "5. Load" "6. Grants")  # Agrega más según necesitesas (Arriba la máquina del Cruz Azul!!!!!)
         mkdir -p notebooks_to_deploy
         for nb in "${NOTEBOOKS[@]}"; do
@@ -59,7 +59,7 @@ jobs:
       run: |
         DEST_HOST=${{ secrets.DATABRICKS_DEST_HOST }}
         DEST_TOKEN=${{ secrets.DATABRICKS_DEST_TOKEN }}
-        WORKFLOW_NAME="WF_ADB"
+        WORKFLOW_NAME="WF_ADB_GAMD"
         
         echo "Verificando si existe el workflow: $WORKFLOW_NAME"
         
