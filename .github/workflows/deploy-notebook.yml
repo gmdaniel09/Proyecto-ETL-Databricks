@@ -137,7 +137,7 @@ jobs:
               "task_key": "1. Preparacion_Ambiente",
               "description": "Ejecuta notebook 1. Preparacion_Ambiente con parámetros",
               "notebook_task": {
-                "notebook_path": "/py/scripts/main/1. Preparacion_Ambiente",
+                "notebook_path": "/py/scripts/main/proceso/1. Preparacion_Ambiente",
                 "source": "WORKSPACE",
                 "base_parameters": {
                   "storageName": "adlsgamd26" 
@@ -151,7 +151,7 @@ jobs:
               "task_key": "2. DDLs Tablas",
               "description": "Ejecuta notebook 2. DDLs Tablas con parámetros",
               "notebook_task": {
-                "notebook_path": "/py/scripts/main/2. DDLs Tablas",
+                "notebook_path": "/py/scripts/main/proceso/2. DDLs Tablas",
                 "source": "WORKSPACE",
                 "base_parameters": {
                   "storageName": "adlsgamd26",
@@ -171,7 +171,7 @@ jobs:
               "task_key": "3. Ingesta bronze",
               "description": "Ejecuta notebook 3. Ingesta bronze con parámetros",
               "notebook_task": {
-                "notebook_path": "/py/scripts/main/3. Ingesta bronze",
+                "notebook_path": "/py/scripts/main/proceso/3. Ingesta bronze",
                 "source": "WORKSPACE",
                 "base_parameters": {
                   "container": "raw",
@@ -193,7 +193,7 @@ jobs:
               "task_key": "4. Transformacion",
               "description": "Ejecuta notebook 4. Transformacion con parámetros",
               "notebook_task": {
-                "notebook_path": "/py/scripts/main/4. Transformacion",
+                "notebook_path": "/py/scripts/main/proceso/4. Transformacion",
                 "source": "WORKSPACE",
                 "base_parameters": {
                   "catalogo": "catalog_gamd",
@@ -214,7 +214,7 @@ jobs:
               "task_key": "5. Load",
               "description": "Ejecuta notebook 5. Load con parámetros",
               "notebook_task": {
-                "notebook_path": "/py/scripts/main/5. Load",
+                "notebook_path": "/py/scripts/main/proceso/5. Load",
                 "source": "WORKSPACE",
                 "base_parameters": {
                   ""catalogo": "catalog_gamd",
@@ -235,7 +235,7 @@ jobs:
               "task_key": "6. Grants",
               "description": "Ejecuta notebook 6. Grants con parámetros",
               "notebook_task": {
-                "notebook_path": "/py/scripts/main/6. Grants",
+                "notebook_path": "/py/scripts/main/proceso/6. Grants",
                 "source": "WORKSPACE",
                 "base_parameters": {
                   "catalogo": "catalog_gamd"
