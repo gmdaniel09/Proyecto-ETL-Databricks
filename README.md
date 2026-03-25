@@ -74,38 +74,43 @@ Proceso ETL que extrae información de DataLake y Azure SQL Database con datos q
 # Estructura del proyecto
 
 Proyecto ETL Databricks/
-│
-├── .github/
-│   └── workflows/
-│       └── deploy-notebook.yml
-├──  Dashboard/
-        └── Supermarket Superstore.pbix
-├──  Dataset/
-        └── Aisles.csv
-        └── order_products__prior.csv
-        └── order_products__train.csv
-        └── orders.csv
-        └── products.csv
-        └── sample_submission.csv
-        └── deparments.csv 
-├──   Evidencias/
-├──   Preparacion ambiente/
-        └── 1. Preparacion_Ambiente.ipynb
-        └── 2. DDLs Tablas.ipynb
-├──   Proceso/
-        └── 1. Preparacion_Ambiente.ipynb
-        └── 2. DDLs Tablas.ipynb
-        └── 3. Ingesta bronze.ipynb
-        └── 4. Transformacion.ipynb
-        └── 5. Load.ipynb
-        └── 6. Grants.ipynb       
-└──   Reversion/
-        └── Reversion.ipynb
-└──   Seguridad/
-        └── Grants.ipynb
-└──   README.md
+
+1. .github:
+  1.1 workflows:
+    1.1.1 deploy-notebook.yml
+
+2. Dashboard:
+   2.1 Supermarket Superstore.pbix
+   
+3. Dataset:
+    3.1  Aisles.csv
+    3.2  order_products__prior.csv
+    3.3 order_products__train.csv
+    3.4 orders.csv
+    3.5 products.csv
+    3.6 sample_submission.csv
+    3.7 deparments.csv
+   
+4. Evidencias
+5. Preparacion ambiente:
+    5.1 1. Preparacion_Ambiente.ipynb
+    5.2 2. DDLs Tablas.ipynb
+6. Proceso:
+    6.1 1. Preparacion_Ambiente.ipynb
+    6.2 2. DDLs Tablas.ipynb
+    6.3 3. Ingesta bronze.ipynb
+    6.4 4. Transformacion.ipynb
+    6.5 5. Load.ipynb
+    6.6 6. Grants.ipynb
+7. Reversion:
+    7.1 Reversion.ipynb
+8. Seguridad:
+    8.1 Grants.ipynb
+8. README.md
 
 # Tecnologías
+
+
 
 
   
