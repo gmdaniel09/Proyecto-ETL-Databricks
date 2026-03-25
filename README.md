@@ -37,7 +37,10 @@ Proceso ETL que extrae información de DataLake y Azure SQL Database con datos q
 3. Capa Silver: Almacenar datos en tablas delta con información procesada y aplicando transformación de datos, normalización y completitud.
 4. Capa Gold: Almacenar datos de indicadores y agregaciones para desarrollo de insights
 5. Base de datos intermedia: Base de datos en azure SQL Database para guardar indicadores que consumiran usuarios y dashboard de Power BI
-6. Talero de datos: Dashboard en Power BI para mostrar indicadores
+6. Tablero de datos: Dashboard en Power BI para mostrar indicadores
+
+<img width="1197" height="656" alt="proyecto_etl_databricks" src="https://github.com/user-attachments/assets/9fd9e361-72ca-4898-9624-0397ed04b34d" />
+
 
 # Estructura pipeline ETL
 
