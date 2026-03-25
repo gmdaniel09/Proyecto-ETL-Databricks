@@ -33,8 +33,8 @@ Proceso ETL que extrae información de DataLake y Azure SQL Database con datos q
 # Descripción Arquitectura
 
 1. Capa RAW: Uso de azure data lake para almacenar archivos CSV y azure SQL database para origenes de datos.
-2. Capa Bronze: Almacenar datos en tabla delta con información sin transformar
-3. Capa Silver: Almacenar datos en tablas delta con información procesada y aplicando transformación de datos.
+2. Capa Bronze: Almacenar datos en tabla delta con información sin transformar, sin validación y respetando datos de origen
+3. Capa Silver: Almacenar datos en tablas delta con información procesada y aplicando transformación de datos, normalización y completitud.
 4. Capa Gold: Almacenar datos de indicadores y agregaciones para desarrollo de insights
 5. Base de datos intermedia: Base de datos en azure SQL Database para guardar indicadores que consumiran usuarios y dashboard de Power BI
 6. Talero de datos: Dashboard en Power BI para mostrar indicadores
@@ -59,8 +59,51 @@ Proceso ETL que extrae información de DataLake y Azure SQL Database con datos q
    • sample_submission
    • deparments
    
-4. SILVER
-5. GOLD
+3. SILVER:
+   • Eval_set: catalogo de datos
+   • order_products: union de origenes de datos prior y train
+   • orders: datos de ordenes con identificador de usuario y tiempos en horas y días desde el registro de orden
+   • kpis_products_ordered: obtiene indicador del total de ordenes por departamento, pasillo y producto
+   • kpis_eval_set: indicadores del total de usuarios, total de ordenes y promedios dehoras y días desde el registro de orden
+   
+6. GOLD:
+
+   • kpis_products_ordered: obtiene indicador del total de ordenes por departamento, pasillo y producto
+   • kpis_eval_set: indicadores del total de usuarios, total de ordenes y promedios dehoras y días desde el registro de orden
+
+# Estructura del proyecto
+
+Proyecto ETL Databricks/
+│
+├── .github/
+│   └── workflows/
+│       └── deploy-notebook.yml
+├──  Dashboard/
+        └── Supermarket Superstore.pbix
+├──  Dataset/
+        └── Aisles.csv
+        └── order_products__prior.csv
+        └── order_products__train.csv
+        └── orders.csv
+        └── products.csv
+        └── sample_submission.csv
+        └── deparments.csv 
+├──   Evidencias/
+├──   Preparacion ambiente/
+        └── 1. Preparacion_Ambiente.ipynb
+        └── 2. DDLs Tablas.ipynb
+├──   Proceso/
+        └── 1. Preparacion_Ambiente.ipynb
+        └── 2. DDLs Tablas.ipynb
+        └── 3. Ingesta bronze.ipynb
+        └── 4. Transformacion.ipynb
+        └── 5. Load.ipynb
+        └── 6. Grants.ipynb       
+└──   Reversion/
+        └── Reversion.ipynb
+└──   Seguridad/
+        └── Grants.ipynb
+└──   README.md
 
 # Tecnologías
 
