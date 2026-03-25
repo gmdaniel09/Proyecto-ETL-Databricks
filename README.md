@@ -110,6 +110,34 @@ Proyecto ETL Databricks/
 
 # Tecnologías
 
+1. Azure Databricks
+2. Azure
+3. Azure Data Factory
+4. PySpark
+5. DeltaLake
+6. Azure SQL Database
+7. CI/CD Github Actions
+8. Azure Key Vault
+
+# WorkFlow Databricks
+<img width="1906" height="724" alt="Job_pipeline_databricks_productivo" src="https://github.com/user-attachments/assets/b7ce6518-e0ad-49a4-99a5-c766e039caf6" />
+
+# Pipeline Azure Data Factory
+<img width="1910" height="942" alt="Ejecución_pipeline_data_factory" src="https://github.com/user-attachments/assets/40a54d2c-6bea-4d78-90e9-9759906ab988" />
+
+# Dashboard Power BI
+
+1. Vista departamento
+<img width="1918" height="1024" alt="Dashboard_deparments" src="https://github.com/user-attachments/assets/75545ee3-b3d4-496b-b84a-84cdfcb4ced7" />
+
+3. Vista pasillos
+<img width="1920" height="1024" alt="Dashboard_aisles" src="https://github.com/user-attachments/assets/3c21b328-b9b8-4c73-baed-657176926af5" />
+
+5. Vista Productos
+<img width="1916" height="1022" alt="Dashboard_products" src="https://github.com/user-attachments/assets/a5dd4968-02ed-4ad5-9632-2cdd8e50ee44" />
+
+# Autor
+
 
 
 
