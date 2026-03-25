@@ -138,6 +138,10 @@ Proyecto ETL Databricks/
 
 # Autor
 
+### Daniel Gaytán Montes
+#### Linkedin: www.linkedin.com/in/daniel-gaytan-montes-data-engineer
+#### Ingeniero de datos | Administrador de base de datos | Desarrollador SQL | Desarrollador Power BI
+
 
 
 
